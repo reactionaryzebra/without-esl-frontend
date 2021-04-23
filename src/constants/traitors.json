@@ -1,0 +1,26 @@
+[
+  {
+    "name": "cfc",
+    "displayName": "Chelsea FC"
+  },
+  {
+    "name": "afc",
+    "displayName": "Arsenal FC"
+  },
+  {
+    "name": "tot",
+    "displayName": "Tottenham Hotspur FC"
+  },
+  {
+    "name": "mcfc",
+    "displayName": "Manchester City FC"
+  },
+  {
+    "name": "lfc",
+    "displayName": "Liverpool FC"
+  },
+  {
+    "name": "mufc",
+    "displayName": "Manchester United FC"
+  }
+]
