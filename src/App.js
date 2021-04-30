@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import TraitorList from "./components/TraitorList/TraitorList";
 import SeasonScroll from "./components/SeasonScroll/SeasonScroll";
+import LeagueTable from "./components/LeagueTable/LeagueTable";
 import seasons from "./constants/seasons.json";
 
 const initialActiveSeasonId = seasons[0].id;
@@ -18,6 +19,7 @@ function App() {
         activeSeasonId={activeSeasonId}
         onChangeSeason={handleChangeSeason}
       />
+      <LeagueTable />
     </div>
   );
 }
