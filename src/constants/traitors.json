@@ -1,26 +1,32 @@
 [
   {
-    "name": "cfc",
-    "displayName": "Chelsea FC"
+    "id": "Chelsea",
+    "displayName": "Chelsea FC",
+    "logoId": "cfc"
   },
   {
-    "name": "afc",
-    "displayName": "Arsenal FC"
+    "id": "Arsenal",
+    "displayName": "Arsenal FC",
+    "logoId": "afc"
   },
   {
-    "name": "tot",
-    "displayName": "Tottenham Hotspur FC"
+    "id": "Tottenham",
+    "displayName": "Tottenham Hotspur FC",
+    "logoId": "tot"
   },
   {
-    "name": "mcfc",
-    "displayName": "Manchester City FC"
+    "id": "Man City",
+    "displayName": "Manchester City FC",
+    "logoId": "mcfc"
   },
   {
-    "name": "lfc",
-    "displayName": "Liverpool FC"
+    "id": "Liverpool",
+    "displayName": "Liverpool FC",
+    "logoId": "lfc"
   },
   {
-    "name": "mufc",
-    "displayName": "Manchester United FC"
+    "id": "Man United",
+    "displayName": "Manchester United FC",
+    "logoId": "mufc"
   }
 ]

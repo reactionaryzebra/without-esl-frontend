@@ -2,8 +2,8 @@ import React from "react";
 import logos from "../../logos";
 
 function TraitorLogo({ team }) {
-  const { name, displayName } = team;
-  const logoSrc = logos[name];
+  const { logoId, displayName } = team;
+  const logoSrc = logos[logoId];
   return (
     <img
       src={logoSrc}
