@@ -10,16 +10,28 @@ const initialActiveSeasonId = seasons[0].id;
 
 function App() {
   const [activeSeasonId, setActiveSeasonId] = useState(initialActiveSeasonId);
+  const [excludedTeams, setExcludedTeams] = useState([]);
+
+  const { results: table, isFetching } = useFetchTable({
+    season: activeSeasonId,
+    excludedTeams
+  });
+
+  function handleToggleExcludeTeam(teamId) {
+    if (excludedTeams.includes(teamId)) {
+      setExcludedTeams(excludedTeams.filter(_teamId => teamId !== _teamId));
+    } else {
+      setExcludedTeams([...excludedTeams, teamId]);
+    }
+  }
+
   function handleChangeSeason(newSeason) {
     setActiveSeasonId(newSeason.id);
   }
-  const { results: table, isFetching } = useFetchTable({
-    season: activeSeasonId
-  });
 
   return (
     <div className="App">
-      <TraitorList />
+      <TraitorList onSelect={handleToggleExcludeTeam} />
       <SeasonScroll
         activeSeasonId={activeSeasonId}
         onChangeSeason={handleChangeSeason}
