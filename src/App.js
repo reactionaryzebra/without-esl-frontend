@@ -31,7 +31,10 @@ function App() {
 
   return (
     <div className="App">
-      <TraitorList onSelect={handleToggleExcludeTeam} />
+      <TraitorList
+        onSelect={handleToggleExcludeTeam}
+        selectedTeams={excludedTeams}
+      />
       <SeasonScroll
         activeSeasonId={activeSeasonId}
         onChangeSeason={handleChangeSeason}

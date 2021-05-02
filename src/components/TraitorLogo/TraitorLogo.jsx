@@ -1,7 +1,7 @@
 import React from "react";
 import logos from "../../logos";
 
-function TraitorLogo({ team, onSelect }) {
+function TraitorLogo({ team, onSelect, isSelected }) {
   const { logoId, displayName, id } = team;
   const logoSrc = logos[logoId];
 
@@ -15,7 +15,12 @@ function TraitorLogo({ team, onSelect }) {
       src={logoSrc}
       alt={displayName}
       title={displayName}
-      style={{ width: "50px", height: "50px" }}
+      style={{
+        cursor: "pointer",
+        width: "50px",
+        height: "50px",
+        opacity: isSelected ? "0.25" : "1"
+      }}
     />
   );
 }
