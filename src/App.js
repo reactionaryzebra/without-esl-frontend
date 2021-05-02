@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <header>Without the ESL</header>
       <TraitorList
         onSelect={handleToggleExcludeTeam}
         selectedTeams={excludedTeams}
