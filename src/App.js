@@ -5,12 +5,14 @@ import SeasonScroll from "./components/SeasonScroll/SeasonScroll";
 import LeagueTable from "./components/LeagueTable/LeagueTable";
 import seasons from "./constants/seasons.json";
 import useFetchTable from "./hooks/useFetchTable.jsx";
+import traitors from "./constants/traitors.json";
 
 const initialActiveSeasonId = seasons[0].id;
+const initialExcludedTeams = traitors.map(({ id }) => id);
 
 function App() {
   const [activeSeasonId, setActiveSeasonId] = useState(initialActiveSeasonId);
-  const [excludedTeams, setExcludedTeams] = useState([]);
+  const [excludedTeams, setExcludedTeams] = useState(initialExcludedTeams);
 
   const { results: table, isFetching } = useFetchTable({
     season: activeSeasonId,
