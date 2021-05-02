@@ -34,15 +34,17 @@ function App() {
   return (
     <div className="App">
       <header>Without the ESL</header>
-      <TraitorList
-        onSelect={handleToggleExcludeTeam}
-        selectedTeams={excludedTeams}
-      />
-      <SeasonScroll
-        activeSeasonId={activeSeasonId}
-        onChangeSeason={handleChangeSeason}
-      />
-      <LeagueTable table={table} />
+      <main>
+        <TraitorList
+          onSelect={handleToggleExcludeTeam}
+          selectedTeams={excludedTeams}
+        />
+        <SeasonScroll
+          activeSeasonId={activeSeasonId}
+          onChangeSeason={handleChangeSeason}
+        />
+        <LeagueTable table={table} />
+      </main>
     </div>
   );
 }
