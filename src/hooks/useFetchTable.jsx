@@ -1,9 +1,18 @@
 import { useState, useEffect } from "react";
 import { host, tableEndpoint } from "../constants/api.json";
 
+function resolveRow({ goals_for, goals_against, ...rest }) {
+  return {
+    ...rest,
+    goalsFor: goals_for,
+    goalsAgainst: goals_against
+  };
+}
+
 function useFetchTable({ season = "1011", excludedTeams = [] }) {
   const [results, setResults] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
+
   useEffect(() => {
     async function fetchTable() {
       const endpoint = host + tableEndpoint;
@@ -24,7 +33,10 @@ function useFetchTable({ season = "1011", excludedTeams = [] }) {
     }
 
     setIsFetching(true);
-    fetchTable().then(table => setResults(table));
+    fetchTable().then(table => {
+      const resolvedTable = table.map(resolveRow);
+      setResults(resolvedTable);
+    });
     setIsFetching(false);
   }, [season, excludedTeams.length]);
 
