@@ -13,25 +13,29 @@ function SeasonScroll({ activeSeasonId, onChangeSeason }) {
   }
   return (
     <div>
-      <span
+      <img
+        src={icons["chevronLeft"]}
+        alt="left"
+        title="left"
         onClick={() => handleNavigateSeason(-1)}
         style={{
           visibility: seasonIdx === 0 ? "hidden" : "visible",
-          cursor: "pointer"
+          cursor: "pointer",
+          height: "1rem"
         }}
-      >
-        <img src={icons["chevronLeft"]} alt="left" title="left" />
-      </span>
+      />
       <span>{season.displayName}</span>
-      <span
+      <img
+        src={icons["chevronRight"]}
+        alt="right"
+        title="right"
         onClick={() => handleNavigateSeason(1)}
         style={{
           visibility: seasonIdx === seasons.length - 1 ? "hidden" : "visible",
-          cursor: "pointer"
+          cursor: "pointer",
+          height: "1rem"
         }}
-      >
-        <img src={icons["chevronRight"]} alt="right" title="right" />
-      </span>
+      />
     </div>
   );
 }
