@@ -1,0 +1,15 @@
+.team-list {
+  text-align: center;
+}
+
+.team-list > label {
+  color: gray;
+  margin-bottom: 0.25rem;
+}
+
+.team-list > .list {
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
