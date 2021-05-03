@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { host, tableEndpoint } from "../constants/api.json";
 
 function resolveRow({ goals_for, goals_against, ...rest }) {
   return {
@@ -15,7 +14,7 @@ function useFetchTable({ season = "1011", excludedTeams = [] }) {
 
   useEffect(() => {
     async function fetchTable() {
-      const endpoint = host + tableEndpoint;
+      const endpoint = process.env.REACT_APP_GET_TABLE_ENDPOINT;
       const params = JSON.stringify({
         season,
         excludedTeams
