@@ -17,7 +17,7 @@ function TraitorLogo({ team, onSelect, isSelected }) {
       title={displayName}
       style={{
         cursor: "pointer",
-        width: "50px",
+        width: id === "Tottenham" ? "unset" : "50px",
         height: "50px",
         opacity: isSelected ? "0.25" : "1"
       }}
