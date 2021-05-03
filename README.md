@@ -13,4 +13,4 @@ This app shows what the last ten years of Premier league football would have loo
 
 Built with HTML, CSS, JS and React with PHP scripts for the backend
 
-Link to backend (https://github.com/reactionaryzebra/without-esl-api)
+Link to [backend](https://github.com/reactionaryzebra/without-esl-api)
