@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Without ESL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+On April 18, 2021 twelve of Europe's most famous football clubs issued a statement which shocked the world. They announced that they would be leaving the UEFA competition structure and forming their own exclusive league with no possibilities of relegation. Among those twelve teams were six from the English Premier League - Chelsea, Arsenal, Tottenham, Manchester City, Manchester United, and Liverpool. Immediately fans began to clamor for punishment for these clubs. Among the suggestions were relegation/removal from the Premier League itself.
 
-## Available Scripts
+This app shows what the last ten years of Premier league football would have looked like without those six teams. If you're a fan of one of these clubs, or are just curious, you can put any number of them back into the mix and see how each season would have shaken out.
 
-In the project directory, you can run:
+## Acknowledgements
 
-### `npm start`
+- The data for this project comes from [datahub](http://datahub.io)
+- The logos come from [freebiesupply](http://freebiesupply.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Built with HTML, CSS, JS and React with PHP scripts for the backend
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Link to backend (https://github.com/reactionaryzebra/without-esl-api)
