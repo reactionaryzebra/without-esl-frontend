@@ -1,6 +1,5 @@
 .App {
   height: 100vh;
-  padding: 1rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -9,7 +8,23 @@
 
 header {
   height: 15%;
+  padding: 1%;
   display: flex;
+  background: rgb(63, 16, 82);
+}
+
+header > h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  width: min-content;
+}
+
+header > div {
+  width: 40%;
+  height: 80%;
+  padding: 1%;
+  background: white;
 }
 
 main {
