@@ -1,16 +1,21 @@
 .App {
-  text-align: center;
   height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 header {
   height: 15%;
+  display: flex;
 }
 
 main {
-  height: 85%;
+  flex: 1;
+  min-height: 50%;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

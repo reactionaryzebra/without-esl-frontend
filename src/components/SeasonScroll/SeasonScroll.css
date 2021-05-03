@@ -1,0 +1,14 @@
+.season-scroll {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.season-scroll > label {
+  color: gray;
+}
+
+.season-scroll > .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

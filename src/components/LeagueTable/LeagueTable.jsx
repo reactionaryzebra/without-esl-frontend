@@ -1,35 +1,32 @@
 import React from "react";
+import "./LeagueTable.css";
 
 function LeagueTable({ table }) {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Pos</th>
-          <th>Club</th>
-          <th>Pts</th>
-          <th>W</th>
-          <th>D</th>
-          <th>L</th>
-          <th>GF</th>
-          <th>GA</th>
-        </tr>
-      </thead>
-      <tbody>
-        {table.map((team, index) => (
-          <tr key={team.name}>
-            <td>{index + 1}</td>
-            <td>{team.name}</td>
-            <td>{team.points}</td>
-            <td>{team.wins}</td>
-            <td>{team.draws}</td>
-            <td>{team.losses}</td>
-            <td>{team.goalsFor}</td>
-            <td>{team.goalsAgainst}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div className="table">
+      <div className="row header">
+        <div></div>
+        <div className="club-name">Club</div>
+        <div>Pts</div>
+        <div>W</div>
+        <div>D</div>
+        <div>L</div>
+        <div>GF</div>
+        <div>GA</div>
+      </div>
+      {table.map((team, index) => (
+        <div key={team.name} className="row">
+          <div>{index + 1}</div>
+          <div className="club-name">{team.name}</div>
+          <div>{team.points}</div>
+          <div>{team.wins}</div>
+          <div>{team.draws}</div>
+          <div>{team.losses}</div>
+          <div>{team.goalsFor}</div>
+          <div>{team.goalsAgainst}</div>
+        </div>
+      ))}
+    </div>
   );
 }
 
