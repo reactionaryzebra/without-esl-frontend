@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import TraitorList from "./components/TraitorList/TraitorList";
+import TeamList from "./components/TeamList/TeamList";
 import SeasonScroll from "./components/SeasonScroll/SeasonScroll";
 import LeagueTable from "./components/LeagueTable/LeagueTable";
 import seasons from "./constants/seasons.json";
@@ -42,7 +42,7 @@ function App() {
         </div>
       </header>
       <main>
-        <TraitorList
+        <TeamList
           onSelect={handleToggleExcludeTeam}
           selectedTeams={excludedTeams}
         />

@@ -1,6 +1,6 @@
 import React from "react";
 import traitors from "../../constants/traitors.json";
-import TraitorLogo from "../TraitorLogo/TraitorLogo.jsx";
+import TeamLogo from "../TeamLogo/TeamLogo.jsx";
 
 const listStyle = {
   padding: "0 15rem",
@@ -8,11 +8,11 @@ const listStyle = {
   justifyContent: "space-around"
 };
 
-function TraitorList({ onSelect, selectedTeams }) {
+function TeamList({ onSelect, selectedTeams }) {
   return (
     <div style={listStyle}>
       {traitors.map(traitor => (
-        <TraitorLogo
+        <TeamLogo
           key={traitor.id}
           team={traitor}
           onSelect={onSelect}
@@ -23,4 +23,4 @@ function TraitorList({ onSelect, selectedTeams }) {
   );
 }
 
-export default TraitorList;
+export default TeamList;
