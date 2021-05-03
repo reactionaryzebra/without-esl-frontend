@@ -19,16 +19,21 @@ function useFetchTable({ season = "1011", excludedTeams = [] }) {
         season,
         excludedTeams
       });
-      const data = await fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Content-Type": "application/json; charset=UTF-8"
-        },
-        body: params
-      });
-      const response = await data.json();
-      return response;
+      try {
+        const data = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/json; charset=UTF-8"
+          },
+          body: params
+        });
+        const response = await data.json();
+        return response;
+      } catch (err) {
+        console.warn(err);
+        return [];
+      }
     }
 
     setIsFetching(true);
