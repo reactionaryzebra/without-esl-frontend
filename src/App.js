@@ -35,11 +35,6 @@ function App() {
     <div className="App">
       <header>
         <h1>Without ESL</h1>
-        <div>
-          What would the Premier League have looked like the last ten years
-          without any combination of the ESL six? Select any number of teams to
-          include/exclude and any season to see the final table.
-        </div>
       </header>
       <main>
         <TeamList
