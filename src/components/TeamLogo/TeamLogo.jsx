@@ -1,9 +1,12 @@
 import React from "react";
 import logos from "../../logos";
+import "./TeamLogo.css";
 
 function TraitorLogo({ team, onSelect, isSelected }) {
   const { logoId, displayName, id } = team;
   const logoSrc = logos[logoId];
+
+  const classNames = `logo${isSelected ? " is-selected" : ""}`;
 
   function handleClick() {
     onSelect(id);
@@ -11,16 +14,12 @@ function TraitorLogo({ team, onSelect, isSelected }) {
 
   return (
     <img
+      id={id === "Tottenham" ? "tottenham" : ""}
+      className={classNames}
       onClick={handleClick}
       src={logoSrc}
       alt={displayName}
       title={displayName}
-      style={{
-        cursor: "pointer",
-        width: id === "Tottenham" ? "unset" : "50px",
-        height: "50px",
-        opacity: isSelected ? "0.25" : "1"
-      }}
     />
   );
 }
